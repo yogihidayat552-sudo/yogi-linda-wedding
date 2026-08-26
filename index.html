@@ -1,0 +1,1028 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yogi & Linda | Wedding Invitation</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia,serif;
+    background:#f7f2e8;
+    color:#3c352b;
+}
+
+section{
+    min-height:100vh;
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.container{
+    max-width:1000px;
+    width:100%;
+}
+
+
+/* ================= COVER ================= */
+
+.cover{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=90");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.cover small{
+
+    font-size:16px;
+
+    letter-spacing:5px;
+
+    margin-bottom:25px;
+
+}
+
+.cover h1{
+
+    font-size:65px;
+
+    font-weight:normal;
+
+    margin-bottom:15px;
+
+}
+
+.cover .tanggal{
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 32px;
+
+    background:#b8955a;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#8f703d;
+
+    transform:scale(1.05);
+
+}
+
+
+/* ================= PEMBUKA ================= */
+
+.content{
+
+    flex-direction:column;
+
+}
+
+.subtitle{
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    color:#a27d42;
+
+    margin-bottom:15px;
+
+}
+
+h2{
+
+    font-size:45px;
+
+    font-weight:normal;
+
+    color:#9c763e;
+
+    margin-bottom:25px;
+
+}
+
+.description{
+
+    max-width:700px;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+
+/* ================= MEMPELAI ================= */
+
+.couple{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    margin-top:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.person{
+
+    width:300px;
+
+}
+
+.person img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:7px solid #d5b77d;
+
+    margin-bottom:20px;
+
+}
+
+.person h3{
+
+    font-size:32px;
+
+    font-weight:normal;
+
+    color:#9c763e;
+
+    margin-bottom:12px;
+
+}
+
+.person p{
+
+    line-height:1.8;
+
+}
+
+
+/* ================= COUNTDOWN ================= */
+
+.countdown-section{
+
+    background:#302b25;
+
+    color:white;
+
+}
+
+.countdown-section h2{
+
+    color:#d5b77d;
+
+}
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.time{
+
+    background:#403a31;
+
+    padding:20px;
+
+    width:100px;
+
+    border-radius:15px;
+
+}
+
+.time span{
+
+    display:block;
+
+    font-size:32px;
+
+    color:#d5b77d;
+
+    margin-bottom:5px;
+
+}
+
+
+/* ================= ACARA ================= */
+
+.events{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.event{
+
+    background:white;
+
+    width:330px;
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+.event h3{
+
+    color:#9c763e;
+
+    font-size:27px;
+
+    font-weight:normal;
+
+    margin-bottom:20px;
+
+}
+
+.event p{
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+}
+
+
+/* ================= LOKASI ================= */
+
+.location{
+
+    background:#eee6d7;
+
+}
+
+.location-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    max-width:650px;
+
+    margin:auto;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+.location-box p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ================= GALERI ================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+/* ================= PENUTUP ================= */
+
+.closing{
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+
+    url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=90");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+.closing h2{
+
+    color:#d5b77d;
+
+}
+
+.closing p{
+
+    max-width:650px;
+
+    line-height:1.9;
+
+    margin:auto;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#211e1a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+footer h2{
+
+    color:#d5b77d;
+
+    font-size:30px;
+
+}
+
+
+/* ================= HP ================= */
+
+@media(max-width:700px){
+
+    .cover h1{
+
+        font-size:42px;
+
+    }
+
+    .cover small{
+
+        font-size:12px;
+
+    }
+
+    h2{
+
+        font-size:34px;
+
+    }
+
+    .couple{
+
+        gap:45px;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .gallery img{
+
+        height:170px;
+
+    }
+
+    .location-box{
+
+        padding:30px 20px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= COVER ================= -->
+
+<section class="cover">
+
+    <small>THE WEDDING OF</small>
+
+    <h1>Yogi & Linda</h1>
+
+    <div class="tanggal">
+        Kamis, 24 Desember 2026
+    </div>
+
+    <a href="#home" class="btn">
+        💌 Buka Undangan
+    </a>
+
+</section>
+
+
+
+<!-- ================= PEMBUKA ================= -->
+
+<section class="content" id="home">
+
+<div class="container">
+
+    <div class="subtitle">
+        ASSALAMU'ALAIKUM WARAHMATULLAHI WABARAKATUH
+    </div>
+
+    <h2>
+        Dengan Memohon Ridho Allah SWT
+    </h2>
+
+    <p class="description">
+
+        Dengan memohon rahmat dan ridho Allah SWT,
+        kami bermaksud mengundang Bapak/Ibu/Saudara/i
+        untuk hadir dan memberikan doa restu pada acara
+        pernikahan kami.
+
+    </p>
+
+
+    <div class="couple">
+
+
+        <!-- PRIA -->
+
+        <div class="person">
+
+            <!-- FOTO PRIA NANTI DIGANTI -->
+
+            <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=90"
+            alt="Yogi Hidayat">
+
+            <h3>
+                Yogi Hidayat
+            </h3>
+
+            <p>
+
+                Putra dari<br>
+
+                <b>Bapak Rifa'i</b><br>
+
+                &<br>
+
+                <b>Ibu Rohayati</b>
+
+            </p>
+
+        </div>
+
+
+        <!-- WANITA -->
+
+        <div class="person">
+
+            <!-- FOTO WANITA NANTI DIGANTI -->
+
+            <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=90"
+            alt="Linda Amania">
+
+            <h3>
+                Linda Amania
+            </h3>
+
+            <p>
+
+                Putri dari<br>
+
+                <b>Bapak Anang Suhendar</b><br>
+
+                &<br>
+
+                <b>Ibu Krisdayanti Nur Hasanah</b>
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= COUNTDOWN ================= -->
+
+<section class="countdown-section">
+
+<div class="container">
+
+    <div class="subtitle">
+        SAVE THE DATE
+    </div>
+
+    <h2>
+        Menuju Hari Bahagia
+    </h2>
+
+    <p>
+        Kamis, 24 Desember 2026
+    </p>
+
+
+    <div class="countdown">
+
+        <div class="time">
+
+            <span id="days">
+                0
+            </span>
+
+            Hari
+
+        </div>
+
+
+        <div class="time">
+
+            <span id="hours">
+                0
+            </span>
+
+            Jam
+
+        </div>
+
+
+        <div class="time">
+
+            <span id="minutes">
+                0
+            </span>
+
+            Menit
+
+        </div>
+
+
+        <div class="time">
+
+            <span id="seconds">
+                0
+            </span>
+
+            Detik
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ACARA ================= -->
+
+<section class="content">
+
+<div class="container">
+
+    <div class="subtitle">
+        WAKTU & TEMPAT
+    </div>
+
+    <h2>
+        Acara Pernikahan
+    </h2>
+
+
+    <div class="events">
+
+
+        <!-- AKAD -->
+
+        <div class="event">
+
+            <h3>
+                Akad Nikah
+            </h3>
+
+            <p>
+                📅 Kamis, 24 Desember 2026
+            </p>
+
+            <p>
+                🕐 08:00 WIB s/d selesai
+            </p>
+
+        </div>
+
+
+        <!-- RESEPSI -->
+
+        <div class="event">
+
+            <h3>
+                Resepsi
+            </h3>
+
+            <p>
+                📅 Kamis, 24 Desember 2026
+            </p>
+
+            <p>
+                🕐 10:00 WIB s/d selesai
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= LOKASI ================= -->
+
+<section class="location">
+
+<div class="container">
+
+    <div class="subtitle">
+        LOKASI ACARA
+    </div>
+
+    <h2>
+        Tempat Pernikahan
+    </h2>
+
+
+    <div class="location-box">
+
+        <h3>
+            📍 Lengkong Kulon
+        </h3>
+
+        <br>
+
+        <p>
+
+            Pagedangan,<br>
+
+            Tangerang, Banten 15331
+
+        </p>
+
+
+        <a
+        href="https://maps.app.goo.gl/dxpwc8gQZrJ3U37AA"
+        target="_blank"
+        class="btn">
+
+            📍 Buka Google Maps
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= GALERI ================= -->
+
+<section class="content">
+
+<div class="container">
+
+    <div class="subtitle">
+        MOMENT
+    </div>
+
+    <h2>
+        Galeri Kami
+    </h2>
+
+    <p class="description">
+
+        Beberapa momen yang menjadi bagian
+        dari perjalanan kami.
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <img
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=90">
+
+
+        <img
+        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=90">
+
+
+        <img
+        src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=90">
+
+
+        <img
+        src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=90">
+
+
+        <img
+        src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=90">
+
+
+        <img
+        src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=90">
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PENUTUP ================= -->
+
+<section class="closing">
+
+<div class="container">
+
+    <div class="subtitle">
+        YOGI & LINDA
+    </div>
+
+    <h2>
+        Terima Kasih
+    </h2>
+
+    <p>
+
+        Merupakan suatu kehormatan dan kebahagiaan
+        bagi kami apabila Bapak/Ibu/Saudara/i
+        berkenan hadir untuk memberikan doa restu
+        kepada kami.
+
+        <br><br>
+
+        Atas kehadiran dan doa restunya,
+        kami ucapkan terima kasih.
+
+    </p>
+
+    <br>
+
+    <h2>
+        Yogi & Linda
+    </h2>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>
+        Yogi & Linda
+    </h2>
+
+    <br>
+
+    <p>
+        Kamis, 24 Desember 2026
+    </p>
+
+    <br>
+
+    <p>
+        Made with ❤️
+    </p>
+
+</footer>
+
+
+
+<script>
+
+
+/* ================= COUNTDOWN ================= */
+
+const tanggalNikah =
+new Date("December 24, 2026 08:00:00").getTime();
+
+
+const countdown =
+setInterval(function(){
+
+
+    const sekarang =
+    new Date().getTime();
+
+
+    const jarak =
+    tanggalNikah - sekarang;
+
+
+    const hari =
+    Math.floor(
+        jarak /
+        (1000 * 60 * 60 * 24)
+    );
+
+
+    const jam =
+    Math.floor(
+        (jarak %
+        (1000 * 60 * 60 * 24))
+        /
+        (1000 * 60 * 60)
+    );
+
+
+    const menit =
+    Math.floor(
+        (jarak %
+        (1000 * 60 * 60))
+        /
+        (1000 * 60)
+    );
+
+
+    const detik =
+    Math.floor(
+        (jarak %
+        (1000 * 60))
+        /
+        1000
+    );
+
+
+    document.getElementById("days")
+    .innerText =
+    hari;
+
+
+    document.getElementById("hours")
+    .innerText =
+    jam;
+
+
+    document.getElementById("minutes")
+    .innerText =
+    menit;
+
+
+    document.getElementById("seconds")
+    .innerText =
+    detik;
+
+
+    if(jarak < 0){
+
+        clearInterval(countdown);
+
+        document.getElementById("days")
+        .innerText="0";
+
+        document.getElementById("hours")
+        .innerText="0";
+
+        document.getElementById("minutes")
+        .innerText="0";
+
+        document.getElementById("seconds")
+        .innerText="0";
+
+    }
+
+
+},1000);
+
+</script>
+
+
+</body>
+</html>
+```
